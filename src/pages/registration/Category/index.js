@@ -95,9 +95,9 @@ function RegistrationCategory() {
       </form>
 
       <ul>
-        {categories.map((category, index) => (
-          <li key={`${category}${index}`}>
-            {category.name}
+        {categories.map((category) => (
+          <li key={`${category.id}`}>
+            {category.title}
           </li>
         ))}
       </ul>
