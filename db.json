@@ -1,0 +1,34 @@
+{
+  "categories":[
+     {
+       "id":1,
+       "name": "Beginner",
+       "description":"This topic will be find kind os class of someone that do not know anything in English",
+       "color":"#cbd1ff"
+     },
+     {
+        "id":2,
+        "name": "Elementary",
+        "description":"This topic will be find kind os class of someone that do not know anything in English",
+        "color":"#cbd1ff"
+      },
+      {
+        "id":3,
+        "name": "Pre-intermediate",
+        "description":"This topic will be find kind os class of someone that do not know anything in English",
+        "color":"#cbd1ff"
+      },
+      {
+        "id":4,
+        "name": "Intermediate",
+        "description":"This topic will be find kind os class of someone that do not know anything in English",
+        "color":"#cbd1ff"
+      },
+      {
+        "id":5,
+        "name": "Advanced",
+        "description":"This topic will be find kind os class of someone that do not know anything in English",
+        "color":"#cbd1ff"
+      }
+   ]
+}
