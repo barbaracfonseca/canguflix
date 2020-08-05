@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useFom';
 
 function RegistrationCategory() {
   const inicialValues = {
@@ -11,33 +12,20 @@ function RegistrationCategory() {
     color: '',
   };
 
+  const { handleChange, values, clearForm } = useForm(inicialValues);
+
   const [categories, setCategories] = useState([]);
-  const [values, setValues] = useState(inicialValues);
-  // categoryName, setCategoryName
-
-  function setVal(key, val) {
-    // key: name, description,..
-    setValues({
-      ...values,
-      [key]: val, // name:'value'
-    });
-  }
-
-  function handleChange(infoEvent) {
-    setVal(
-      infoEvent.target.getAttribute('name'),
-      infoEvent.target.value,
-    );
-  }
 
   useEffect(() => {
     if (window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:8080/categories';
+      const URL = 'https://canguflix.herokuapp.com/categories';
       fetch(URL)
         .then(async (serverAnswer) => {
           if (serverAnswer.ok) {
             const answer = await serverAnswer.json();
-            setCategories(answer);
+            setCategories([
+              ...answer,
+            ]);
             return;
           }
           throw new Error('Unable to retrieve data');
@@ -60,7 +48,7 @@ function RegistrationCategory() {
           values,
         ]);
 
-        setValues(inicialValues);
+        clearForm();
       }}
       >
         {/* State */}
@@ -96,7 +84,7 @@ function RegistrationCategory() {
 
       <ul>
         {categories.map((category) => (
-          <li key={`${category.id}`}>
+          <li key={`${category.title}`}>
             {category.title}
           </li>
         ))}
