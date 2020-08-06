@@ -13,7 +13,7 @@ function RegistrationVideo() {
   const categoryTitles = categories.map(({ title }) => title);
   const { handleChange, values } = useForm({
     title: 'Standard video',
-    url: 'https://www.youtube.com/watch?v=AaRhgWg2R4o',
+    url: 'https://www.youtube.com/watch?v=66aG5P0kQpU',
     category: 'Beginner',
   });
 
