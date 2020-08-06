@@ -1,17 +1,25 @@
 import React from 'react';
 import { FooterBase } from './styles';
 
+import smalllogo from '../../assets/img/smalllogo.png';
+
 function Footer() {
   return (
     <FooterBase>
-      <a href="https://www.alura.com.br/">
-        <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
+      <a href="/">
+        <img src={smalllogo} alt="Logo CanguFlix" />
       </a>
       <p>
-        Orgulhosamente criado durante a
+        Proudly created with care during the final project of college by
         {' '}
+        <a href="www.linkedin.com/in/barbara-cangucu-fonseca">
+          Barbara C Fonseca
+        </a>
+
+        ☘️
+
         <a href="https://www.alura.com.br/">
-          Imersão React da Alura
+          Alura's React Immersion
         </a>
       </p>
     </FooterBase>

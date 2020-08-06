@@ -9,7 +9,7 @@
     {
       "id": 2,
       "title": "Elementary",
-      "description": "This topic will be find kind os class of someone that do not know anything in English",
+      "description": "This topic will be find kind os class of more the basic Englis",
       "color": "#cbd1ff"
     },
     {
@@ -21,19 +21,19 @@
     {
       "id": 4,
       "title": "Intermediate",
-      "description": "This topic will be find kind os class of someone that do not know anything in English",
+      "description": "Dreaming with English",
       "color": "#cbd1ff"
     },
     {
       "id": 5,
       "title": "Advanced",
-      "description": "This topic will be find kind os class of someone that do not know anything in English",
+      "description": "To be a fluent in English",
       "color": "#cbd1ff"
     },
     {
       "id": 6,
       "title": "For Business communication",
-      "description": "This topic will be find kind os class of someone that do not know anything in English",
+      "description": "This topic will be for bussiness applications",
       "color": "#cbd1ff"
     }
   ],
@@ -41,7 +41,7 @@
     {
       "id": 1,
       "categoryId": 1,
-      "title": "Speak English with Vanessa",
+      "title": "Speak English",
       "description": "Could we learning English if starting now!?",
       "url": "https://www.youtube.com/watch?v=AaRhgWg2R4o"
     },
