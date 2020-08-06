@@ -1,6 +1,6 @@
 import config from '../config';
 
-const URL_CATEGORIES = `${config.URL_BACKEND}`;
+const URL_CATEGORIES = `${config.URL_BACKEND}/categories`;
 
 function getAll() {
   return fetch(`${URL_CATEGORIES}`)
